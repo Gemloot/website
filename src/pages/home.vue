@@ -85,6 +85,7 @@ onMounted(() => {
 
     web3Provider.on("networkChanged", async (id) => {
       checkNetwork(id)
+      await load()
     });
   }
 
