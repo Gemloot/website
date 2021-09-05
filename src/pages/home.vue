@@ -32,7 +32,7 @@ const setAddress = async () => {
   try {
     const signer = await provider.getSigner()
     const value = await signer.getAddress()
-    nftContract.value = new ethers.Contract(CONTRACT_CONFIG.GLOOT, GEM_ABI, signer)
+    nftContract.value = new ethers.Contract(CONTRACT_CONFIG.GEMLOOT, GEM_ABI, signer)
     address.value = value
     loading.value.account = false
     await countDown()
@@ -47,7 +47,7 @@ const setAddress = async () => {
 const countDown = async () => {
   const now = Date.now()
   loading.value.counting = true
-  const nftContract = new ethers.Contract(CONTRACT_CONFIG.GLOOT, GEM_ABI, provider)
+  const nftContract = new ethers.Contract(CONTRACT_CONFIG.GEMLOOT, GEM_ABI, provider)
   const time = (await nftContract.startTime()).toNumber() * 1e3
   const startDate = time
   if(now < time) {
@@ -128,7 +128,7 @@ const checkNetwork = async (id) => {
 const loadLoot = async  () => {
   loading.value.gem = true
   const value = address.value;
-  const nftContract = new ethers.Contract(CONTRACT_CONFIG.GLOOT, GEM_ABI, provider)
+  const nftContract = new ethers.Contract(CONTRACT_CONFIG.GEMLOOT, GEM_ABI, provider)
   const count = (await nftContract.balanceOf(value)).toNumber()
   const list = (await Promise.all(range(count).map(async (index) => {
     console.log(index, address);

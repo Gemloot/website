@@ -1,3 +1,3 @@
 export const CONTRACT_CONFIG = {
-  GLOOT: '0xc25ed8efAA71c30fc49A09da16fe8a103babCAEb'
+  GEMLOOT: '0xdb1b39ffe24f6f2d68254663f4985e8bd2e9021f'
 }
