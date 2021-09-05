@@ -1,0 +1,137 @@
+.container {
+  max-width: 720px;
+  padding: 0 20px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.header {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .wallet {
+    button {
+      width: 200px;
+    }
+  }
+}
+
+.logo {
+  font-size: 26px;
+  font-family: "Apple Chancery", "Gabriola", Arial;
+
+  .img {
+    width: 40px;
+    height: 40px;
+    background: url(../assets/logo.svg) 0 0 no-repeat;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+  }
+}
+
+.loading {
+  text-align: center;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info {
+  .details {
+    font-family: "Apple Chancery", "Gabriola";
+    margin: 50px 0 30px;
+    p {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+  }
+  .chest {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    margin-bottom: 30px;
+  }
+}
+
+.stone {
+  width: 100px;
+  display: block;
+}
+
+.block-claim {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .btn-claim {
+    width: 200px;
+  }
+}
+
+.block-gems {
+  margin-top: 50px;
+}
+
+.block-gems-multi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 24px;
+  row-gap: 24px;
+}
+
+
+@media only screen and (max-width: 760px) {
+  .header {
+    .logo {
+      font-size: 20px;
+    }
+    .wallet {
+      button {
+        width: 140px;
+        font-size: 12px;
+      }
+    }
+  }
+  .block-gems-multi {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.footer {
+  margin: 50px 0 30px;
+  text-align: center;
+  color: rgba(#fff, .3);
+
+  .actions {
+    a {
+      display: inline-block;
+      color: rgba(#fff, .3);
+      padding: 5px;
+      margin: 0 5px;
+    }
+  }
+}
+
+
+.ts-count-down {
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30px;
+  font-weight: 400;
+  text-shadow: 0.375rem 0.3125rem 1.5625rem rgb(0 0 0 / 50%);
+  text-align: center;
+  margin: 20px auto 40px;
+
+  .ts-cc-description {
+    display: block;
+    font-size: 12px;
+    opacity: .5;
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Gemloot",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "@chenfengyuan/vue-countdown": "^2.0.0-rc",
+    "@vicons/ionicons4": "^0.11.0",
+    "@vicons/ionicons5": "^0.11.0",
+    "ethers": "^5.4.6",
+    "lodash": "^4.17.21",
+    "naive-ui": "^2.16.7",
+    "native-ui": "0.0.1",
+    "vue": "^3.2.6",
+    "vue-router": "^3.5.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.6.0",
+    "@vue/compiler-sfc": "^3.2.6",
+    "less": "^4.1.1",
+    "vfonts": "^0.1.0",
+    "vite": "^2.5.2"
+  }
+}
