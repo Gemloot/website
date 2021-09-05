@@ -236,7 +236,7 @@ const displayAddress = computed(() => {
 
     <div class="footer">
       <div class="actions">
-        <a href="">
+        <a href="https://twitter.com/GemLoot" target="_blank">
           <n-icon size="20">
             <logo-twitter></logo-twitter>
           </n-icon>
